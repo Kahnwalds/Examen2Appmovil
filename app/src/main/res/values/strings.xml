@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Examen02</string>
+    <string name="title_purchase_form">New Purchase</string>
+    <string name="form_product_name">Product Name:</string>
+    <string name="form_price">Price:</string>
+    <string name="form_store_name">Store Name:</string>
+    <string name="form_purchase_date">Purchase Date (DD/MM/AAAA):</string>
+    <string name="form_edit_product_name">Product Name</string>
+    <string name="form_edit_store_name">Store Name</string>
+    <string name="form_edit_price">Price</string>
+    <string name="form_edit_purchase_date">Date (DD/MM/AAAA)</string>
+    <string name="btn_save">Save Purchase</string>
+    <string name="txt_purchase_management">Purchase Management</string>
+    <string name="btn_add_purchase">Add Purchase</string>
+    <string name="btn_purchase_history">Purchase History</string>
 </resources>

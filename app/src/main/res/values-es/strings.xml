@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen02</string>
+    <string name="title_purchase_form">Nueva Compra</string>
+    <string name="form_product_name">Nombre del producto:</string>
+    <string name="form_price">Precio:</string>
+    <string name="form_store_name">Nombre de la Tienda:</string>
+    <string name="form_purchase_date">Fecha de la compra (DD/MM/AAAA):</string>
+    <string name="form_edit_product_name">Nombre del producto</string>
+    <string name="form_edit_store_name">Nombre de la Tienda</string>
+    <string name="form_edit_price">Precio</string>
+    <string name="form_edit_purchase_date">Fecha (DD/MM/AAAA)</string>
+    <string name="btn_save">Guardar Compra</string>
+    <string name="txt_purchase_management">Gestión de Compras</string>
+    <string name="btn_add_purchase">Agregar Compra</string>
+    <string name="btn_purchase_history">Consultar historial</string>
+</resources>

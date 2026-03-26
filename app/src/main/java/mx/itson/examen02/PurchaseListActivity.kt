@@ -10,6 +10,7 @@ import mx.itson.examen02.entities.Purchase
 import androidx.appcompat.app.AppCompatActivity
 
 
+
 class PurchaseListActivity : AppCompatActivity(){
     var listPurchases : ListView? = null
 
