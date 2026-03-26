@@ -73,7 +73,10 @@
         android:id="@+id/txt_purchase_date"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/form_edit_purchase_date" />
+        android:hint="@string/form_edit_purchase_date"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none" />
 
     <Button
         android:id="@+id/btn_save"

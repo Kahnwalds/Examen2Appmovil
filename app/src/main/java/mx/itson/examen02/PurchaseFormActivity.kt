@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import mx.itson.examen02.entities.Purchase
+import android.app.DatePickerDialog
+import java.util.Calendar
 
 class PurchaseFormActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -21,6 +23,12 @@ class PurchaseFormActivity : AppCompatActivity(), View.OnClickListener {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val txt_purchase_date = findViewById<EditText>(R.id.txt_purchase_date)
+
+        txt_purchase_date.setOnClickListener {
+            showDatePickerDialog(txt_purchase_date)
         }
 
         val btnSave = findViewById<View>(R.id.btn_save) as Button
@@ -48,5 +56,19 @@ class PurchaseFormActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
         }
+    }
+    private fun showDatePickerDialog(editText: EditText) {
+        val calendar = Calendar.getInstance()
+        val year = calendar.get(Calendar.YEAR)
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+        val datePicker = DatePickerDialog(this, { _, selectedYear, selectedMonth, selectedDay ->
+            // El mes empieza en 0 (Enero es 0), por eso sumamos 1
+            val selectedDate = "$selectedDay/${selectedMonth + 1}/$selectedYear"
+            editText.setText(selectedDate)
+        }, year, month, day)
+
+        datePicker.show()
     }
 }
