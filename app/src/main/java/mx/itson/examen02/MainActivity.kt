@@ -25,17 +25,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
             insets
         }
 
-        // --- Configuración de tus botones ---
-        // Asegúrate de que estos IDs (btn_new_purchase y btn_list_purchase)
-        // existan en tu archivo activity_main.xml
         val btnNewPurchase = findViewById<Button>(R.id.btn_new_purchase)
         btnNewPurchase.setOnClickListener(this)
 
         val btnListPurchase = findViewById<Button>(R.id.btn_list_purchase)
         btnListPurchase.setOnClickListener(this)
     }
-
-    // Función de vibración (Requisito técnico del examen)
 
     fun vibrate() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
@@ -49,16 +44,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener  {
     }
 
     override fun onClick(v: View) {
-        vibrate() // Vibra al presionar cualquier botón
+        vibrate()
 
         when (v.id) {
             R.id.btn_new_purchase -> {
-                // Cambiar a la pantalla de formulario
                 val intent = Intent(this, PurchaseFormActivity::class.java)
                 startActivity(intent)
             }
             R.id.btn_list_purchase -> {
-                // Cambiar a la pantalla de lista
                 val intent = Intent(this, PurchaseListActivity::class.java)
                 startActivity(intent)
             }

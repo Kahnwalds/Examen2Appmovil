@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/backgroundCars1"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,18 +16,24 @@
         android:textStyle="bold"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"
-        android:text="@string/txt_purchase_management"/>
+        android:layout_gravity="center"
+        android:text="@string/txt_purchase_management"
+        android:background="#B6B9BA"
+        android:textColor="#007FFA"/>
 
     <Button
         android:id="@+id/btn_new_purchase"
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
         android:text="@string/btn_add_purchase"/>
 
     <Button
         android:id="@+id/btn_list_purchase"
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
         android:text="@string/btn_purchase_history"/>
 </LinearLayout>
